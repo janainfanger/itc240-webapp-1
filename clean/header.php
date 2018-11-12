@@ -42,7 +42,7 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="post.html">Sample Post</a>
+              <a class="nav-link" href="daily.php">Daily</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.php">Contact</a>
@@ -59,8 +59,8 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-              <h1>Clean Blog</h1>
-              <span class="subheading">A Blog Theme by Start Bootstrap</span>
+              <h1><?=$sitename?></h1>
+              <span class="subheading"><?=$slogan?><?=$sloganIcon?></span>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
         <div class="page-heading">
-              <h1>Page Heading Goes Here!</h1>
-              <span class="subheading">Clever comment here!</span>
+              <h1><?=$pageHeader?></h1>
+              <span class="subheading"><?=$subHeader?></span>
         </div>
           <!-- header ends here -->
