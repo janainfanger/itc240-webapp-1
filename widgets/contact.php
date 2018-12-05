@@ -1,5 +1,5 @@
 <?php include 'includes/config.php'?>
-<?php include 'header.php'?>
+<?php get_header()?>
 
 <?php
     
@@ -71,7 +71,7 @@ if(isset($_POST['Name']))
 ?>
 
 
-<?php include 'footer.php';
+<?php get_footer();
 
 function process_post()
 {//loop through POST vars and return a single string

@@ -29,7 +29,8 @@ $config = new stdClass;
 //CHANGE TO MATCH YOUR PAGES
 
 $config->nav1['index.php']= 'Home';
-$config->nav1['customer_list.php']= 'Customers';
+$config->nav1['template-example.php']= 'Template';
+$config->nav1['character_list.php']= 'Character List';
 $config->nav1['daily.php']= 'Daily';
 $config->nav1['contact.php']= 'Contact';
 $config->nav1['db-test.php']= 'DB-test';
@@ -44,7 +45,7 @@ define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
 
 //START NEW THEME STUFF - be sure to add trailing slash!
 $sub_folder = 'widgets/';//change to 'widgets' or 'sprockets' etc.
-$config->theme = 'Brick';//sub folder to themes
+$config->theme = 'Clean';//sub folder to themes
 
 //will add sub-folder if not loaded to root:
 $config->physical_path = $_SERVER["DOCUMENT_ROOT"] . '/' . $sub_folder;
@@ -73,9 +74,9 @@ $config->loadhead = '';//place items in <head> element
       $config->slogan= 'Whatever it is you do, we do it better.';
        $config->pageHeader = 'The Developer forgot to put a page header.';
      $config->subHeader = 'The Developer forgot to put a sub header.';
-      $config->sloganIcon='';//will be replaced in contact.php by hero icons
+  /*    $config->sloganIcon='';//will be replaced in contact.php by hero icons*/
 
-switch(THIS_PAGE){
+
         
  /*   case 'contact.php':    
         $config->title = 'Contact Page';    
@@ -89,7 +90,7 @@ switch(THIS_PAGE){
    case 'template.php':    
         $config->title = 'Template Page';    
     break; */
-        
+switch(THIS_PAGE){        
          case 'index.php':
          $config->title = 'My Home Page';
         $config->pageHeader = 'Welcome Home!';
@@ -119,14 +120,14 @@ switch(THIS_PAGE){
          $config->title = 'My Contact page';
          $config->pageHeader = 'Please contact us';
          $config->subHeader = 'We appreciate your feedback';
-         $config->sloganIcon= randomize($heros);
+        /* $config->sloganIcon= randomize($heros);*/
     break;
         
    case 'db-test.php':
         $config->title = 'My Database test page';
         $config->pageHeader = 'Please check out my database!';
         $config->subHeader = 'Check this page to see if your db credentials are correct';
-        $config->sloganIcon= randomize($heros);
+      /*  $config->sloganIcon= randomize($heros);*/
     break;
         
         

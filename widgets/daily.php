@@ -1,4 +1,5 @@
-<?php include 'config.php'?>
+<?php include 'includes/config.php'?>
+
 
     <?php   
     
@@ -87,7 +88,7 @@
 
 
 
-<?php include 'header.php'?>
+<?php get_header()?>
 
 <p><?=$today?>'s special is <?=$coffee?></p>  
 
@@ -103,4 +104,4 @@
 <p><a href="daily.php?day=Saturday">Saturday</a></p>
  
 
-<?php include 'footer.php'?>
+<?php get_footer()?>
