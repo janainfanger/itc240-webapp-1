@@ -1,0 +1,27 @@
+{% extends 'base.html' %} 
+{% block content %}
+<h2>Meetings</h2>
+<p>Here are a bunch of the types of meetings we have! </p>
+<table class='table'>
+<tr>
+    <th>Meeting Name    </th>
+    <th>Meeting Minutes</th>
+{% for item in meeting_list  %}
+    <tr>
+         <td><a href="{% url 'details' id=item.id %}">{{ item.meetingtitle }}</a></td>
+         <td>{{ item.meetingdate }}</td>
+    
+
+    </tr>
+
+{% endfor %}
+
+</tr>
+
+
+</table>
+
+<!--Here is a comment-->
+
+
+{% endblock %}

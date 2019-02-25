@@ -1,0 +1,28 @@
+{% extends 'base.html' %} 
+{% block content %}
+<h2>Resources</h2>
+<p>Here are a bunch of the types of resources we offer! </p>
+<table class='table'>
+<tr>
+    <th>Name    </th>
+    <th>Description</th>
+{% for item in resources  %}
+    <tr>
+         <td>{{ item.resourcename }}</td>
+         <td>{{ item.resourcetype }}</td>
+         <td>{{ item.resourceURL }}</td>
+         <td>{{ item.resourcedescription }}</td>
+
+    </tr>
+
+{% endfor %}
+
+</tr>>
+
+
+</table>
+
+<!--Here is a comment-->
+
+
+{% endblock %}
